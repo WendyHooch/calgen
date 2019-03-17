@@ -1,0 +1,12 @@
+# 设计文档
+
+## 主流程
+处理参数 -> 生成题目 -> 表达式求值 -> 用户交互
+
+## 功能函数设置
+fraction simplify(fraction a);//用于返回分数a的最简形式
+fraction GenerateAnOperant();//用于随机产生一个100以内的整数或者一个最简真分数
+void PrintFraction(fraction a);//用于打印一个操作数
+char GenerateOperator();//用于随机产生一个四则运算符
+int priority(char a, char b);//用于判断运算符a和b的优先级：若a优于b，则返回1，否则返回0。
+fraction calculate(char op, fraction a, fraction b);//用于计算a op b并返回最简运算结果。
